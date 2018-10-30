@@ -1,0 +1,11 @@
+---
+- hostsss: all
+  remote_ user: t
+  tasks:
+        - name: example copying file with owner and permissions
+          copy:
+                  src: /etc/lsb-release
+                  dest: /home/t/lsb-release
+                  owner: t
+                  group: t
+                  mode: 0644
