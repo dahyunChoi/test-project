@@ -1,0 +1,9 @@
+---
+- hosts: all
+  remote_user: t
+  tasks:
+          -name: install pk
+          apt: pkg=grub-theme-tmaxlinux update_cache=true
+          become: yes
+          become_method: sudo
+          become_user: root
